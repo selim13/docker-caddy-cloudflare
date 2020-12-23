@@ -5,5 +5,6 @@ RUN xcaddy build \
 
 
 FROM caddy:2
+LABEL org.opencontainers.image.source https://github.com/selim13/docker-caddy-cloudflare
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
